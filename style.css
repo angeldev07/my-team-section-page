@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.who-are{
+    padding: 3rem 0  4rem;
+}
+
+.title{
+    margin-bottom: 2rem;
+    font-family: 'PT Serif';
+    font-size: 2rem;
+}
+
+.subtitle{
+    padding-bottom: 1em;
+    font-weight: 600;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+}
+
+/* Team grid */
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: 1fr ;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+.member-head{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.job{
+    font-size: .8rem;
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+}
+
+/* .member--bottom{
+    margin-top: 3rem;
+} */
+
+.member:nth-child(even){
+    margin-top: 3rem;
+}
+
+.profile img{
+    width: 100%;
+    height: 100%;
+}
+
+.name{
+    font-size: 1rem;
+}
+
+.footer{
+    padding: 2em 0 1.5em;
+    font-size: .7rem;
+    text-align: center;
+    color: #a9a9a9;
+}
+
+.footer a{
+    font-weight: 600;
+    color: inherit;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .who-are{
+        display: flex;
+        gap: 4rem;
+    }
+
+    .title{
+        width: 60%;
+    }
+
+    .subtitle{
+        padding-bottom: .3em;
+    }
+
+    .team{
+        width: 40%;
+    }
+
+    .member:nth-child(even){
+        margin: 0;
+    }
+
+    .member:nth-child(2){
+        margin: 4rem 0; 
+    }
+
+    .member:nth-child(5){
+        margin-top: 4rem;
+    }
+}
